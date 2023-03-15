@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SamsungWalletApp.Views.Menu"
+             Title="SAMSUNG Wallet"
+             
+             >
+
+
+    <ContentPage.Content>
+            
+            <StackLayout >
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="SAMSUNG Wallet" FontSize="Default" TextColor="Black" Padding="20" Margin="8" FontAttributes="Bold"/>
+                    <StackLayout Margin="120,0, 0,0" Orientation="Horizontal">
+                        <Image  Source="bell.png" Margin="8" WidthRequest="20"/>
+                        <Image   Source="Parameter.png" Margin="8" WidthRequest="20" />
+                    </StackLayout>
+                </StackLayout>
+        <ScrollView>
+                <StackLayout Margin="0,5,0,0">
+                    <Frame Margin="10" CornerRadius="16">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="100,*"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Image  Source="credit_credit.png"/>
+                            <Label Text="Carta di pagamento" 
+                                   Margin="20,0,20,0"
+                                HorizontalTextAlignment="Center"/>
+                            <Label Text="0" HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+                        <StackLayout  Grid.Row="0" Grid.Column="1">
+                            <Image  Source="fedelta.png"/>
+                            <Label Text="Carta fedeltà"
+                                HorizontalTextAlignment="Center"/>
+                            <Label Text="0" HorizontalTextAlignment="Center"/>
+
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="2">
+                            <Image  Source="gif_card.png"/>
+                            <Label Text="Gift Card"
+                                HorizontalTextAlignment="Center"/>
+                            <Label Text="0" HorizontalTextAlignment="Center"/>
+                                <BoxView/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="1" Grid.Column="0">
+                            <Image  Source="coupon.png"/>
+                            <Label Text="Coupon"
+                                HorizontalTextAlignment="Center"/>
+                            <Label Text="0" HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="1" Grid.Column="1">
+                            <Image  Source="digital_key1.png"/>
+                            <Label Text="Chiavi digitali"
+                                   HorizontalTextAlignment="Center"/>
+                            <Label Text="0" HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="1" Grid.Column="2"  Margin="0" Padding="-5">
+                            <Image Source="Pass_sanita1.png" HeightRequest="35"/>
+                            <Label Text="Pass sanitari"
+                                   HorizontalTextAlignment="Center"/>
+                            <Label Text="0" HorizontalTextAlignment="Center"/>
+
+                            <BoxView/>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="2" Grid.Column="0">
+                            <Image  Source="airplane_ticket.png"/>
+                            <Label Text="Carte d'imbarco"
+                                   Margin="8"
+                                   HorizontalTextAlignment="Center"/>
+                            <Label Text="0" HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+                    <Frame Margin="10" CornerRadius="16">
+                        <StackLayout>
+                            <Label Text="Trasporti publici" FontAttributes="Bold" TextColor="Black" FontSize="Default"/>
+                            <StackLayout>
+                                <Label Text="Paga l'accesso ai trasporti publici utilizzando 
+                                       lo smartphone." />
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="plus.png" HeightRequest="20"/>
+                                    <Button Text="Seleziona de carta di pagamento"  BackgroundColor="Transparent"  />
+                                </StackLayout>
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                    <Frame Margin="10" CornerRadius="16">
+                        <StackLayout>
+                            <Label Text="Samsung Pass" TextColor="Black" FontSize="Default"/>
+                            <StackLayout>
+                                <Label Text="Conferma l'identità online o altro."/>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="shield.png" HeightRequest="20"/>
+                                    <Button Text="Informazioni di accesso"  BackgroundColor="Transparent"/>
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="user.png" HeightRequest="20"/>
+                                    <Button Text="Informazioni Private"  BackgroundColor="Transparent"/>
+                                </StackLayout>
+                                
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame Margin="10" CornerRadius="16">
+                        <StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="gift.png" HeightRequest="20"/>
+                                <Button Text="Promozioni" BackgroundColor="Transparent"/>
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="business_partnership.png" HeightRequest="20"/>
+                                <Button Text="Partner"  BackgroundColor="Transparent"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="Question.png" HeightRequest="20"/>
+                                <Button Text="Informazioni sull'utilizzo" BackgroundColor="Transparent"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+        </ScrollView>
+            </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

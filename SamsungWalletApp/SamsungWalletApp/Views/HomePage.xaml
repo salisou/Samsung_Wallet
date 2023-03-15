@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SamsungWalletApp.Views.HomePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="SAMSUNG Wallet" FontSize="Default" TextColor="Black" Padding="20" Margin="8" FontAttributes="Bold"/>
+            <StackLayout>
+                <Image  Source="event.gif" IsAnimationPlaying="True" WidthRequest="450"/>
+            </StackLayout>
+
+            <BoxView BackgroundColor="Transparent"/>
+            <StackLayout>
+
+                <Label Text="Agguingi ad Accesso rapido" 
+                        TextColor="Black"
+                        FontSize="25" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center" 
+                        HorizontalTextAlignment="Center" 
+                        FontAttributes="Bold" 
+                        Margin="20, 0, 20,0" />
+                <StackLayout>
+                    <Label Text="Un'unica posizione per le tue carte di pagamento, le carte fedeltàe altro"
+                           Margin="30,0,20,0" 
+                           FontSize="16"  
+                           FontAttributes="Italic"
+                           HorizontalTextAlignment="Center"/>
+                </StackLayout>
+                <BoxView/>
+                <Button Text="Aggiungi" 
+                        HeightRequest="50" 
+                        WidthRequest="120" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"
+                        Margin="80,0,80,10" 
+                        CornerRadius="50"
+                        Background="#1170e4"
+                        TextColor="White" 
+                        FontAttributes="Bold"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
